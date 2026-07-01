@@ -23,7 +23,3 @@
 &right_encoder {
     status = "okay";
 };
-
-&left_encoder {
-    status = "disabled";
-};
