@@ -84,6 +84,12 @@ label= "BASE"                              ;
     &kp DEL      &kp Z       &kp X       &kp C       &kp V       &kp B   &kp C_MUTE      &kp C_MUTE   &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &kp DEL   &kp SPACE   &lt NAV TAB                             &kp RET   &kp SPACE   &lt SYM ESC
                         >;
+
+sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
+                //&inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
+        >;
+        
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -163,12 +169,5 @@ label= "ADJ"                               ;
                                         &trans      &trans      &trans                        &trans      &trans      &trans      
                         >;
                 };
-
-
-        sensor-bindings = <
-                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
-                //&inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
-        >;
-
         };
 };
