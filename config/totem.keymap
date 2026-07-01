@@ -87,9 +87,9 @@ label= "BASE"                              ;
 
 sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
-                //&inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
-        
+
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -116,6 +116,12 @@ label= "NAVI"                              ;
     &trans      &kp DEL     &kp PG_UP   &kp CAPS    &kp PG_DN   &kp LPAR   &trans      &trans   &kp RPAR    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_MULTIPLY &trans      
                                         &trans      &trans      &trans                        &mo ADJ     &kp KP_N0   &trans      
                         >;
+
+sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
+        >;
+
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -142,6 +148,12 @@ label= "SYM"                               ;
     &trans      &kp RA(F18) &kp RA(F19) &trans      &trans      &trans   &trans      &trans   &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT  &kp BSLH   &trans         
                                         &trans      &gif        &mo ADJ                        &trans      &kp C_PP    &trans      
                         >;
+
+sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
+        >;
+
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -168,6 +180,12 @@ label= "ADJ"                               ;
     &trans      &trans      &bt BT_PRV  &trans      &trans      &trans   &trans      &trans   &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
                                         &trans      &trans      &trans                        &trans      &trans      &trans      
                         >;
+
+sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
+        >;
+
                 };
         };
 };
