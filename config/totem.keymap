@@ -167,7 +167,7 @@ label= "ADJ"                               ;
 
         sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
-                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
+                //&inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
 
         };
