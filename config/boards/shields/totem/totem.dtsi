@@ -65,7 +65,8 @@
         triggers-per-rotation = <15>;
     };
 
-    &i2c0 {
+};
+
+&i2c0 {
     status = "disabled";
-    };
 };
