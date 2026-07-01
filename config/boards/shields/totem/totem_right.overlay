@@ -20,7 +20,7 @@
         ;
 };
 
-right_encoder: encoder_right {
+&right_encoder: encoder_left {
         compatible = "alps,ec11";
         a-gpios = <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
