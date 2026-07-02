@@ -62,37 +62,11 @@
         scroll_horizontal: scroll_horizontal {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-            tap-ms = <500>;
+            bindings = <&msc SCRL_RIGHT &msc SCRL_RIGHT &msc SCRL_RIGHT>, 
+                       <&msc SCRL_LEFT &msc SCRL_LEFT &msc SCRL_LEFT>;
+            tap-ms = <10>;
         };
 
-        scroll_horizontal2: scroll_horizontal2 {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-            tap-ms = <300>;
-        };
-
-        scroll_horizontal3: scroll_horizontal3 {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-            tap-ms = <400>;
-        };
-
-        mouse_move_h: mouse_move_h {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&mmv MOVE_RIGHT>, <&mmv MOVE_LEFT>;
-            tap-ms = <50>;
-        };
-
-        mouse_move_v: mouse_move_v {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&mmv MOVE_UP>, <&mmv MOVE_DOWN>;
-            tap-ms = <50>;
-        };
     };
 
         keymap {
@@ -160,7 +134,7 @@ label= "NAVI"                              ;
                         >;
 
 sensor-bindings = <
-                &scroll_horizontal2     // Encoder izquierdo
+                &scroll_horizontal     // Encoder izquierdo
                 &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
 
@@ -192,7 +166,7 @@ label= "SYM"                               ;
                         >;
 
 sensor-bindings = <
-                &scroll_horizontal3     // Encoder izquierdo
+                &scroll_horizontal     // Encoder izquierdo
                 &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
 
