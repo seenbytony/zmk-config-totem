@@ -63,14 +63,14 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-            tap-ms = <50>;
+            tap-ms = <100>;
         };
 
         mouse_move_h: mouse_move_h {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT>, <&mmv MOVE_LEFT>;
-            tap-ms = <100>;
+            tap-ms = <50>;
         };
 
         mouse_move_v: mouse_move_v {
@@ -146,8 +146,8 @@ label= "NAVI"                              ;
                         >;
 
 sensor-bindings = <
-                &mouse_move_h     // Encoder izquierdo
-                &mouse_move_v     // Encoder derecho
+                &scroll_horizontal     // Encoder izquierdo
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
 
                 };
