@@ -30,6 +30,11 @@
   require-prior-idle-ms = <150>;
 };
 
+&msc {
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
+};
+
 / {
     combos {
             compatible = "zmk,combos";
@@ -55,21 +60,12 @@
     };
 
     behaviors {
-        // 1. Creamos un comportamiento de scroll exclusivo para el encoder
-        // que alcanza la velocidad máxima en 0 milisegundos (sin aceleración)
-        msc_encoder: msc_encoder {
-            compatible = "zmk,behavior-mouse-scroll";
-            #binding-cells = <1>;
-            time-to-max-speed-ms = <0>;
-            acceleration-exponent = <0>;
-        };
-
-        // 2. Modificamos tu mapeo para que use el nuevo scroll instantáneo
+        // Definimos nuestro encoder personalizado para scroll horizontal
         scroll_horizontal: scroll_horizontal {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc_encoder SCRL_RIGHT>, <&msc_encoder SCRL_LEFT>;
-            tap-ms = <30>; 
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            tap-ms = <30>;
         };
     };
 
