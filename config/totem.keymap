@@ -30,11 +30,6 @@
   require-prior-idle-ms = <150>;
 };
 
-&msc {
-    time-to-max-speed-ms = <0>;
-    acceleration-exponent = <0>;
-};
-
 / {
     combos {
             compatible = "zmk,combos";
@@ -64,8 +59,8 @@
         scroll_horizontal: scroll_horizontal {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-            tap-ms = <30>;
+            bindings = <&msc SCRL_RIGHT>, <&mmv MOVE_LEFT>;
+            tap-ms = <500>;
         };
     };
 
@@ -97,7 +92,7 @@ label= "BASE"                              ;
 
                  &kp Q       &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U       &kp I       &kp O       &kp P
     &kp BSPC     &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G                                &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI  SEMI &kp BSPC
-    &msc SCRL_LEFT     &kp Z       &kp X       &kp C       &kp V       &kp B   &kp C_MUTE      &kp C_MUTE   &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
+    &msc SCRL_LEFT     &kp Z       &kp X       &kp C       &kp V       &kp B   &kp C_MUTE      &kp C_MUTE   &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mmv MOVE_LEFT
                                         &kp DEL   &kp SPACE   &lt NAV TAB                             &kp RET   &kp SPACE   &lt SYM ESC
                         >;
 
