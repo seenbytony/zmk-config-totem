@@ -63,7 +63,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-            tap-ms = <180>;
+            tap-ms = <220>;
         };
 
         mouse_move_h: mouse_move_h {
