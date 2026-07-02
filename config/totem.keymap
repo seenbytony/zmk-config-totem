@@ -86,7 +86,7 @@ label= "BASE"                              ;
                         >;
 
 sensor-bindings = <
-                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
+                &msc SCRL_RIGHT SCRL_LEFT     // Encoder izquierdo
                 &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
 
@@ -118,7 +118,7 @@ label= "NAVI"                              ;
                         >;
 
 sensor-bindings = <
-                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
+                &msc SCRL_RIGHT SCRL_LEFT     // Encoder izquierdo
                 &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
 
@@ -150,7 +150,7 @@ label= "SYM"                               ;
                         >;
 
 sensor-bindings = <
-                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
+                &msc SCRL_RIGHT SCRL_LEFT     // Encoder izquierdo
                 &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
 
@@ -182,10 +182,10 @@ label= "ADJ"                               ;
                         >;
 
 sensor-bindings = <
-                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder izquierdo
+                &msc SCRL_RIGHT SCRL_LEFT     // Encoder izquierdo
                 &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
-
+        
                 };
         };
 };
