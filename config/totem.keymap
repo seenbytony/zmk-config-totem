@@ -63,7 +63,21 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-            tap-ms = <220>;
+            //tap-ms = <220>;
+        };
+
+        scroll_horizontal2: scroll_horizontal2 {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            tap-ms = <300>;
+        };
+
+        scroll_horizontal3: scroll_horizontal3 {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            tap-ms = <400>;
         };
 
         mouse_move_h: mouse_move_h {
@@ -146,7 +160,7 @@ label= "NAVI"                              ;
                         >;
 
 sensor-bindings = <
-                &scroll_horizontal     // Encoder izquierdo
+                &scroll_horizontal2     // Encoder izquierdo
                 &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
 
@@ -178,7 +192,7 @@ label= "SYM"                               ;
                         >;
 
 sensor-bindings = <
-                &scroll_horizontal     // Encoder izquierdo
+                &scroll_horizontal3     // Encoder izquierdo
                 &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
         >;
 
