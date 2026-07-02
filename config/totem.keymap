@@ -15,6 +15,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 3
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
@@ -59,8 +61,22 @@
         scroll_horizontal: scroll_horizontal {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&mmv MOVE_LEFT>;
-            tap-ms = <500>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            tap-ms = <50>;
+        };
+
+        mouse_move_h: mouse_move_h {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT>, <&mmv MOVE_LEFT>;
+            tap-ms = <50>;
+        };
+
+        mouse_move_v: mouse_move_v {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv MOVE_UP>, <&mmv MOVE_DOWN>;
+            tap-ms = <50>;
         };
     };
 
@@ -129,8 +145,8 @@ label= "NAVI"                              ;
                         >;
 
 sensor-bindings = <
-                &scroll_horizontal     // Encoder izquierdo
-                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
+                &mouse_move_h     // Encoder izquierdo
+                &mouse_move_v     // Encoder derecho
         >;
 
                 };
