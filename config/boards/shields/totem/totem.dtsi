@@ -41,7 +41,7 @@
             , <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
-    };y
+    };
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
