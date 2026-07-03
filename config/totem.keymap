@@ -96,7 +96,7 @@ label= "BASE"                              ;
 
                  &kp Q       &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U       &kp I       &kp O       &kp P
     &kp BSPC     &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G                                &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI  SEMI &kp BSPC
-    &msc SCRL_LEFT     &kp Z       &kp X       &kp C       &kp V       &kp B   &kp C_MUTE      &kp C_MUTE   &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mmv MOVE_LEFT
+    &msc SCRL_LEFT     &kp Z       &kp X       &kp C       &kp V       &kp B   &kp C_MUTE      &kp C_PP   &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mmv MOVE_LEFT
                                         &kp DEL   &kp SPACE   &lt NAV TAB                             &kp RET   &kp SPACE   &lt SYM ESC
                         >;
 
