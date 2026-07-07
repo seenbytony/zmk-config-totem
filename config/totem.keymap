@@ -66,6 +66,13 @@
             tap-ms = <30>;
         };
 
+        scroll_vertical: scroll_vertical {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <30>;
+        };
+
     };
 
         keymap {
@@ -134,7 +141,7 @@ label= "NAVI"                              ;
 
 sensor-bindings = <
                 &scroll_horizontal     // Encoder izquierdo
-                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
+                &scroll_vertical     // Encoder derecho
         >;
 
                 };
