@@ -5,8 +5,8 @@
         compatible = "zmk,physical-layout";
         display-name = "AONAMI Keyboard Layout";
 
-        kscan = <&kscan0>;
-        transform = <&matrix_transform0>;
+        //kscan = <&kscan0>;
+        transform = <&default_transform0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100  100   77  (-800)   200   232>
