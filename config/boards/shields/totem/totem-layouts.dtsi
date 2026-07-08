@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    aonami_layout0: physical_layout_0 {
+    aonami_layout: aonami_layout {
         compatible = "zmk,physical-layout";
         display-name = "AONAMI Keyboard Layout";
 
