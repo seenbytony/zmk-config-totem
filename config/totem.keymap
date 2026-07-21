@@ -66,6 +66,21 @@
             bindings = <&kp PRINTSCREEN>;
             key-positions = <12 13 14>;
         };
+
+        combo_rapos {
+            bindings = <&kp MINUS>;
+            key-positions = <7 8>;
+        };
+
+        como_lapos {
+            bindings = <&kp MINUS>;
+            key-positions = <2 1>;
+        };
+
+        combo_ltilde {
+            bindings = <&kp SQT>;
+            key-positions = <2 3>;
+        };
     };
 
     behaviors {
