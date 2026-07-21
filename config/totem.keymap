@@ -56,6 +56,11 @@
             bindings = <&tog 1>;
             key-positions = <10 22>;
         };
+
+        combo_rtilde {
+            bindings = <&kp SQT>;
+            key-positions = <6 7>;
+        };
     };
 
     behaviors {
@@ -251,10 +256,10 @@
             label = "SYMN";
             display-name = "Number Symbols";
             bindings = <
-        &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                      &kp N6      &kp N7       &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp SQT  &kp LS(N8)                  &kp LS(N9)  &kp LS(SQT)  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans  &trans      &trans       &trans  &trans  &trans  &trans
-                        &trans  &trans   &trans                      &trans      &trans       &trans
+        &kp N1  &kp N2  &kp N3  &kp N4     &kp N5                      &kp N6      &kp N7         &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp MINUS  &kp LS(N8)                  &kp LS(N9)  &kp LS(MINUS)  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans      &trans  &trans  &trans      &trans         &trans  &trans  &trans  &trans
+                        &trans  &trans     &trans                      &trans      &trans         &trans
             >;
 
             sensor-bindings = <
