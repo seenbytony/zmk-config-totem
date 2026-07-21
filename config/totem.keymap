@@ -115,6 +115,43 @@ sensor-bindings = <
 
                 };
 
+                base_mirror_layer {
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+label= "BASE_M"                              ;
+// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+//             ┃     Q     ┃     W     ┃     F     ┃     P     ┃     G     ┃   ┃     J     ┃     L     ┃     U     ┃     Y     ┃     ;     ┃
+//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+//             ┃     A     ┃     R     ┃     S     ┃     T     ┃     D     ┃   ┃     H     ┃     N     ┃     E     ┃     I     ┃     O     ┃
+// ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+// ┃           ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃           ┃
+// ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+//                                     ┃           ┃    TAB    ┃    SPC    ┃   ┃   ENTER   ┃   BSPC    ┃           ┃
+//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+
+//             | SW01  | SW02  | SW03  | SW04  | SW05  |                  | SW05  | SW04  | SW03  | SW02  | SW01  |
+//      | SW06 | SW07  | SW08  | SW09  | SW10  | SW11  |                  | SW11  | SW10  | SW09  | SW08  | SW07  | SW06  |
+//      | SW12 | SW13  | SW14  | SW15  | SW16  | SW17  | SW18  |  | SW18  | SW17  | SW16  | SW15  | SW14  | SW13  | SW12  |
+//                             | SW19  | SW20  | SW21  |                  | SW21  | SW20  | SW19  | 
+
+ display-name = "Base Mirror";
+ bindings = <
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+
+                 &kp Q       &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U       &kp I       &kp O       &kp P
+    &kp BSPC     &kp A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G                                &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI  SEMI &kp BSPC
+    &kp LGUI     &kp Z       &kp X       &kp C       &kp V       &kp B   &kp C_MUTE      &kp C_PP   &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RGUI
+                                        &kp DEL   &kp SPACE   &lt NAV TAB                             &kp RET   &kp SPACE   &lt SYM ESC
+                        >;
+
+sensor-bindings = <
+                &scroll_horizontal     // Encoder izquierdo
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
+        >;
+
+                };
+
+
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
@@ -214,15 +251,29 @@ sensor-bindings = <
         
                 };
         
+        number_symbols_layer {
+            label= "SYMN";
+            display-name = "Number Symbols";
+            bindings = <
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+
+                 &kp Q       &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U       &kp I       &kp O       &kp P
+    &kp BSPC     &kp A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G                                &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI  SEMI &kp BSPC
+    &kp LGUI     &kp Z       &kp X       &kp C       &kp V       &kp B   &kp C_MUTE      &kp C_PP   &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RGUI
+                                        &kp DEL   &kp SPACE   &lt NAV TAB                             &kp RET   &kp SPACE   &lt SYM ESC
+                        >;
+
+sensor-bindings = <
+                &scroll_horizontal     // Encoder izquierdo
+                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
+        >;
+        };
+
         extra1 {
             status = "reserved";
         };
 
         extra2 {
-            status = "reserved";
-        };
-
-        extra3 {
             status = "reserved";
         };
         };
