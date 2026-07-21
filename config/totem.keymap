@@ -276,5 +276,13 @@ sensor-bindings = <
         extra2 {
             status = "reserved";
         };
+
+        extra3 {
+            status = "reserved";
+        };
+
+        extra4 {
+            status = "reserved";
+        };
         };
 };
