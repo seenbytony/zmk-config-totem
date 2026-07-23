@@ -260,8 +260,8 @@
 
             display-name = "Adjustments";
             bindings = <
-                &sys_reset   &bt BT_CLR  &out OUT_TOG    &trans  &trans                  &trans  &kp F7  &kp F8  &kp F9  &kp F12
-&bt BT_CLR_ALL  &bootloader  &bt BT_NXT  &studio_unlock  &trans  &trans                  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+                &sys_reset   &bt BT_CLR  &out OUT_TOG    &ind_con  &trans                  &trans  &kp F7  &kp F8  &kp F9  &kp F12
+&bt BT_CLR_ALL  &bootloader  &bt BT_NXT  &studio_unlock  &ind_bat  &trans                  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
 &trans          &trans       &bt BT_PRV  &trans          &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                          &trans          &trans  &trans                  &trans  &trans  &trans
             >;
