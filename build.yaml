@@ -9,6 +9,6 @@ include:
     shield: totem_right
   - board: seeeduino_xiao_ble
     shield: settings_reset
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: hummingbird rgbled_adapter
 # there is no settingsreset (needed) for the XIAO
