@@ -6,6 +6,7 @@ manifest:
     #  url-base: https://github.com/carrefinho     # <--- and this
     #- name: caksoylar  # <-- new entry
     #  url-base: https://github.com/caksoylar
+    #
     - name: hitsmaxft  # <-- new entry
       url-base: https://github.com/hitsmaxft
   projects:
