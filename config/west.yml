@@ -17,7 +17,7 @@ manifest:
     #  remote: carrefinho                          # <---
     #  revision: main                              # <---
     - name: zmk-rgbled-widget  # <-- new entry
-      remote: hitsmaxft
+      url: https://github.com/hitsmaxft/zmk-rgbled-widget/tree/main
       revision: v0.3
   self:
     path: config
