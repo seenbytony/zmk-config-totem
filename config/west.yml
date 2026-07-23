@@ -18,6 +18,6 @@ manifest:
     #  revision: main                              # <---
     - name: zmk-rgbled-widget  # <-- new entry
       url: https://github.com/hitsmaxft/zmk-rgbled-widget
-      revision: v0.3
+      revision: main
   self:
     path: config
