@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     #- name: carrefinho                            # <--- add this
     #  url-base: https://github.com/carrefinho     # <--- and this
+    - name: caksoylar  # <-- new entry
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
