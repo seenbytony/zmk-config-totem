@@ -4,8 +4,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     #- name: carrefinho                            # <--- add this
     #  url-base: https://github.com/carrefinho     # <--- and this
-    - name: caksoylar  # <-- new entry
-      url-base: https://github.com/caksoylar
+    #- name: caksoylar  # <-- new entry
+    #  url-base: https://github.com/caksoylar
+    - name: hitsmaxft  # <-- new entry
+      url-base: https://github.com/hitsmaxft
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,7 +17,7 @@ manifest:
     #  remote: carrefinho                          # <---
     #  revision: main                              # <---
     - name: zmk-rgbled-widget  # <-- new entry
-      url: https://github.com/caksoylar/zmk-rgbled-widget
+      remote: hitsmaxft
       revision: v0.3
   self:
     path: config
