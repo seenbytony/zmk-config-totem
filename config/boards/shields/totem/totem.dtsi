@@ -69,6 +69,28 @@
 
 };
 
+/ {
+    aliases {
+        status-ws2812 = &ws2812_strip;
+    };
+};
+
+&spi1 {
+    status = "okay";
+    
+    ws2812_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+        reg = <0>;
+        spi-max-frequency = <4000000>;
+        chain-length = <3>;  /* Number of LEDs */
+        color-mapping = <LED_COLOR_ID_GREEN
+                        LED_COLOR_ID_RED
+                        LED_COLOR_ID_BLUE>;
+        reset-delay = <280>;
+        status = "okay";
+    };
+};
+
 &i2c0 {
     status = "disabled";
 };
