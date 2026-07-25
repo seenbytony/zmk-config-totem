@@ -20,6 +20,6 @@ manifest:
     #  revision: main                              # <---
     - name: zmk-rgbled-widget-btprof  # <-- new entry
       url: https://github.com/seenbytony/zmk-rgbled-widget-btprof
-      revision: main
+      revision: v0.3
   self:
     path: config
