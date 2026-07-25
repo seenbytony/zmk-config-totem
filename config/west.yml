@@ -10,7 +10,6 @@ manifest:
     #  url-base: https://github.com/hitsmaxft
     - name: seenbytony  # <-- new entry
       url-base: https://github.com/seenbytony
-    
   projects:
     - name: zmk
       remote: zmkfirmware
