@@ -4,10 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     #- name: carrefinho                            # <--- add this
     #  url-base: https://github.com/carrefinho     # <--- and this
-    - name: caksoylar  # <-- new entry
-      url-base: https://github.com/caksoylar
+    #- name: caksoylar  # <-- new entry
+    #  url-base: https://github.com/caksoylar
     #- name: hitsmaxft  # <-- new entry
     #  url-base: https://github.com/hitsmaxft
+    - name: seenbytony  # <-- new entry
+      url-base: https://github.com/seenbytony
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,8 +18,8 @@ manifest:
     #- name: prospector-zmk-module                 # <--- and these
     #  remote: carrefinho                          # <---
     #  revision: main                              # <---
-    - name: zmk-rgbled-widget  # <-- new entry
-      url: https://github.com/caksoylar/zmk-rgbled-widget
+    - name: zmk-rgbled-widget-btprof  # <-- new entry
+      url: https://github.com/seenbytony/zmk-rgbled-widget-btprof
       revision: v0.3
   self:
     path: config
