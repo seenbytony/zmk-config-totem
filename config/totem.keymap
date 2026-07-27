@@ -203,7 +203,9 @@
                               &trans    &trans     &trans                       &mo 5     &kp KP_N0  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings =
+                <&inc_dec_kp DOWN UP_ARROW>,
+                <&inc_dec_kp RIGHT LEFT>;
         };
 
         nav_mirror_layer {
