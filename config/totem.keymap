@@ -336,10 +336,9 @@
                                             &trans          &trans        &trans                        &trans  &trans  &trans
             >;
 
-            sensor-bindings = <
-                &scroll_horizontal     // Encoder izquierdo
-                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
-            >;
+            sensor-bindings = 
+                <&scroll_horizontal>, 
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         number_symbols_layer {
@@ -352,10 +351,9 @@
                                 &trans      &trans      &trans                      &trans      &trans         &trans
             >;
 
-            sensor-bindings = <
-                &scroll_horizontal     // Encoder izquierdo
-                &inc_dec_kp C_VOL_UP C_VOL_DN     // Encoder derecho
-            >;
+            sensor-bindings = 
+                <&scroll_horizontal>, 
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         extra1 { status = "reserved"; };
