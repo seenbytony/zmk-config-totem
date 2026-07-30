@@ -301,10 +301,10 @@
 
             display-name = "Symbols";
             bindings = <
-        &kp LC(LA(N1))  &kp LC(LA(N2))  &kp LC(LA(N3))  &kp LC(LA(N4))  &kp LC(LA(N5))                  &kp LC(LA(N6))  &kp LC(LA(N7))  &kp LC(LA(N8))  &kp LC(LA(N9))  &kp LC(LA(N0))
-&trans  &kp RA(A)       &trans          &kp RA(S)       &trans          &trans                          &kp C_MUTE      &kp LS(RA(N4))  &kp RA(N5)      &kp RA(N4)      &kp RA(O)       &trans
-&trans  &kp RA(F18)     &kp RA(F19)     &trans          &trans          &trans          &trans  &trans  &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PREV      &kp C_NEXT      &kp BSLH        &trans
-                                        &trans          &trans          &mo 7                           &trans          &kp C_PP        &trans
+        &kp RA(N1)   &kp RA(N2)   &kp RA(N3)  &kp RA(N4)  &kp RA(N5)                  &kp RA(N6)    &kp RA(N7)      &kp RA(N8)  &kp RA(N9)  &kp RA(N0)
+&trans  &kp RA(A)    &trans       &kp RA(S)   &trans      &trans                      &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)   &trans
+&trans  &kp RA(F18)  &kp RA(F19)  &trans      &trans      &trans      &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH    &trans
+                                  &trans      &trans      &mo 7                       &trans        &kp C_PP        &trans
             >;
 
             sensor-bindings =
