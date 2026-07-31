@@ -139,7 +139,7 @@
         tog_mac: tog_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to 1>, <&show_col_white>;
+            bindings = <&macro_tap>, <&to 1 &show_col_white>;
 
             label = "TOG_MAC";
         };
@@ -147,9 +147,23 @@
         tog_win: tog_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to 0>, <&show_col_cyan>;
+            bindings = <&macro_tap>, <&to 0 &show_col_cyan>;
 
             label = "TOG_WIN";
+        };
+
+        tog_mac_bt: tog_mac_bt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &tog_mac>;
+            label = "TOG_MAC_BT";
+        };
+
+        tog_win_bt: tog_win_bt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &tog_win>;
+            label = "TOG_WIN_BT";
         };
     };
 
@@ -353,10 +367,10 @@
 
             display-name = "Adjustments";
             bindings = <
-                &sys_reset    &bt BT_CLR    &out OUT_TOG    &ind_con      &trans                        &trans  &kp F7  &kp F8  &kp F9  &kp F12
-&bt BT_CLR_ALL  &bootloader   &bt BT_NXT    &studio_unlock  &ind_bat      &trans                        &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                            &trans          &trans        &trans                        &trans  &trans  &trans
+                &sys_reset    &bt BT_CLR   &out OUT_TOG    &ind_con      &kt COMMA                     &trans  &kp F7  &kp F8  &kp F9  &kp F12
+&bt BT_CLR_ALL  &bootloader   &bt BT_NXT   &studio_unlock  &ind_bat      &trans                        &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans          &bt BT_SEL 0  &tog_win_bt  &tog_mac_bt     &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                           &trans          &trans        &trans                        &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -368,10 +382,10 @@
             label = "SYMN";
             display-name = "Number Symbols";
             bindings = <
-        &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                            &kp LS(N6)  &kp LS(N7)     &trans  &trans  &trans
-&trans  &trans      &trans      &trans      &kp MINUS   &kp LS(N8)                                            &kp LS(N9)  &kp LS(MINUS)  &trans  &trans  &trans  &trans
-&trans  &show_col_white &show_col_cyan &show_col_magenta  &show_col_yellow  &show_col_blue      &trans  &trans  &show_col_green   &show_col_red  &trans  &trans  &trans  &trans
-                                &trans      &trans      &trans                      &trans      &trans         &trans
+        &kp LS(N1)       &kp LS(N2)      &kp LS(N3)         &kp LS(N4)        &kp LS(N5)                      &kp LS(N6)       &kp LS(N7)     &trans  &trans  &trans
+&trans  &trans           &trans          &trans             &kp MINUS         &kp LS(N8)                      &kp LS(N9)       &kp LS(MINUS)  &trans  &trans  &trans  &trans
+&trans  &show_col_white  &show_col_cyan  &show_col_magenta  &show_col_yellow  &show_col_blue  &trans  &trans  &show_col_green  &show_col_red  &trans  &trans  &trans  &trans
+                                         &trans             &trans            &trans                          &trans           &trans         &trans
             >;
 
             sensor-bindings =
