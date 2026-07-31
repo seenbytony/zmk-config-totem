@@ -368,9 +368,9 @@
             label = "SYMN";
             display-name = "Number Symbols";
             bindings = <
-        &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp LS(N6)  &kp LS(N7)     &trans  &trans  &trans
-&trans  &trans      &trans      &trans      &kp MINUS   &kp LS(N8)                  &kp LS(N9)  &kp LS(MINUS)  &trans  &trans  &trans  &trans
-&trans  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans      &trans         &trans  &trans  &trans  &trans
+        &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                            &kp LS(N6)  &kp LS(N7)     &trans  &trans  &trans
+&trans  &trans      &trans      &trans      &kp MINUS   &kp LS(N8)                                            &kp LS(N9)  &kp LS(MINUS)  &trans  &trans  &trans  &trans
+&trans  &show_col_white &show_col_cyan &show_col_magenta  &show_col_yellow  &show_col_blue      &trans  &trans  &show_col_green   &show_col_red  &trans  &trans  &trans  &trans
                                 &trans      &trans      &trans                      &trans      &trans         &trans
             >;
 
