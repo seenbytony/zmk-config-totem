@@ -139,7 +139,7 @@
         tog_mac: tog_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to 1>;
+            bindings = <&macro_tap>, <&to 1>, <&show_col_white>;
 
             label = "TOG_MAC";
         };
@@ -147,7 +147,7 @@
         tog_win: tog_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&to 0>;
+            bindings = <&macro_tap>, <&to 0>, <&show_col_cyan>;
 
             label = "TOG_WIN";
         };
