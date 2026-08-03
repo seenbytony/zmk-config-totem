@@ -225,7 +225,7 @@
                           &trans      &trans  &trans                  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&scroll_horizontal>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&inc_dec_kp DOWN UP>;
         };
 
         base_mirror_layer {
