@@ -117,7 +117,7 @@
         };
 
         combo_del {
-            bindings = <&kp DEL>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <10 0>;
         };
 
