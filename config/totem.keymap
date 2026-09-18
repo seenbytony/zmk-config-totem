@@ -125,6 +125,21 @@
             bindings = <&kp SPACE>;
             key-positions = <37 38>;
         };
+
+        combo_lalt_2 {
+            bindings = <&kp LALT>;
+            key-positions = <24 12>;
+        };
+
+        combo_rtilde_2 {
+            bindings = <&kp SQT>;
+            key-positions = <6 17>;
+        };
+
+        combo_rapos_2 {
+            bindings = <&kp SQT>;
+            key-positions = <7 18>;
+        };
     };
 
     behaviors {
