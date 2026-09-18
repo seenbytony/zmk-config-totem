@@ -142,7 +142,7 @@
         };
 
         combo_quotes {
-            bindings = <&kp LS(MINUS)>;
+            bindings = <&kp LS(NUMBER_2)>;
             key-positions = <1 12>;
         };
     };
