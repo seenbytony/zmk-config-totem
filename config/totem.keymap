@@ -316,10 +316,10 @@
 
             display-name = "Navigation";
             bindings = <
-        &kp ESC    &kp HOME   &kp UP    &kp EQUAL  &kp LBRC                     &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-&trans  &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp LBKT                     &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS     &trans
-&trans  &kp DEL    &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR  &kp HOME  &kp END  &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &kp KP_NUMLOCK
-                              &trans    &trans     &trans                       &mo 7     &kp KP_N0  &mo 9
+        &kp ESC    &kp HOME   &kp UP    &kp EQUAL  &kp LBRC                     &kp RBRC  &kp N7  &kp N8  &kp N9  &kp KP_PLUS
+&trans  &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp LBKT                     &kp RBKT  &kp N4  &kp N5  &kp N6  &kp KP_MINUS     &trans
+&trans  &kp DEL    &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR  &kp HOME  &kp END  &kp RPAR  &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY  &kp KP_NUMLOCK
+                              &trans    &trans     &trans                       &mo 7     &kp N0  &mo 9
             >;
 
             sensor-bindings = <&scroll_horizontal>, <&scroll_vertical>;
@@ -343,10 +343,10 @@
 
             display-name = "Navigation Mirror";
             bindings = <
-        &kp ESC    &kp KP_NUMBER_9  &kp KP_NUMBER_8  &kp KP_NUMBER_7  &kp LBRC                            &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-&trans  &kp LSHFT  &kp KP_NUMBER_6  &kp KP_NUMBER_5  &kp KP_NUMBER_4  &kp LBKT                            &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS     &trans
-&trans  &kp DEL    &kp KP_NUMBER_3  &kp KP_NUMBER_2  &kp KP_NUMBER_1  &kp KP_NUMBER_0  &kp HOME  &kp END  &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                                    &trans           &trans           &trans                              &mo 7     &kp KP_N0  &trans
+        &kp ESC    &kp N7  &kp N8  &kp N9  &kp LBRC                       &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
+&trans  &kp LSHFT  &kp N4  &kp N5  &kp N6  &kp PERIOD                     &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS     &trans
+&trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp COMMA   &kp HOME  &kp END  &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
+                           &trans  &trans  &trans                         &mo 7     &kp KP_N0  &trans
             >;
 
             sensor-bindings =
