@@ -140,6 +140,11 @@
             bindings = <&kp MINUS>;
             key-positions = <7 18>;
         };
+
+        combo_quotes {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <1 12>;
+        };
     };
 
     behaviors {
