@@ -137,7 +137,7 @@
         };
 
         combo_rapos_2 {
-            bindings = <&kp SQT>;
+            bindings = <&kp MINUS>;
             key-positions = <7 18>;
         };
     };
