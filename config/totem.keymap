@@ -184,6 +184,27 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        encoder_mmvh: encoder_mmvh {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENCODER_MMVH";
+            #sensor-binding-cells = <2>;
+            bindings = <&mmv>, <&mmv>;
+        };
+
+        encoder_mmvv: encoder_mmvv {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENCODER_MMVV";
+            #sensor-binding-cells = <2>;
+            bindings = <&mmv>, <&mmv>;
+        };
+
+        encoder_3d_rot: encoder_3d_rot {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_3D_ROT";
+            #sensor-binding-cells = <0>;
+            bindings = <&rot_3d_r>, <&rot_3d_l>;
+        };
     };
 
     macros {
@@ -229,6 +250,20 @@
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1 &tog_win>;
             label = "TOG_WIN_BT";
+        };
+
+        rot_3d_r: rot_3d_r {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB3 &mmv MOVE_RIGHT>;
+            label = "ROT_3D_R";
+        };
+
+        rot_3d_l: rot_3d_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB3 &mmv MOVE_LEFT>;
+            label = "ROT_3D_L";
         };
     };
 
@@ -465,6 +500,7 @@
             >;
 
             label = "Mouse Layer";
+            sensor-bindings = <&scroll_vertical>, <&encoder_3d_rot>;
         };
 
         extra1 { status = "reserved"; };
