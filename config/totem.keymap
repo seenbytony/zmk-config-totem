@@ -156,6 +156,12 @@
             key-positions = <1 2 3>;
             layers = <0>;
         };
+
+        combo_remove_rows {
+            bindings = <&remove_rows>;
+            key-positions = <1 2 3 37>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -282,6 +288,26 @@
             #binding-cells = <0>;
             bindings = <&kp LALT &kp I &kp R>;
             label = "ADD_ROWS";
+        };
+
+        remove_rows: remove_rows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp SLASH>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "REMOVE_ROWS";
         };
     };
 
