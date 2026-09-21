@@ -150,6 +150,12 @@
             bindings = <&kp F2>;
             key-positions = <6 7 8>;
         };
+
+        combo_add_rows {
+            bindings = <&add_rows>;
+            key-positions = <1 2 3>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -269,6 +275,13 @@
             #binding-cells = <0>;
             bindings = <&mkp MB3 &mmv MOVE_LEFT>;
             label = "ROT_3D_L";
+        };
+
+        add_rows: add_rows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp I &kp R>;
+            label = "ADD_ROWS";
         };
     };
 
