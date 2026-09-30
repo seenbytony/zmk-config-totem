@@ -531,7 +531,7 @@
             >;
 
             sensor-bindings =
-                <&scroll_horizontal>,
+                <&inc_dec_kp END HOME>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
