@@ -162,6 +162,16 @@
             key-positions = <1 2 3 37>;
             layers = <0>;
         };
+
+        combo_wildcard {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <5 16>;
+        };
+
+        combo_ctrldel {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <21 35>;
+        };
     };
 
     behaviors {
@@ -339,7 +349,7 @@
             display-name = "Base";
             bindings = <
                      &kp Q  &kp W       &kp E        &kp R        &lt 3 T                                       &kp Y      &kp U            &kp I        &kp O       &kp P
-&kp BSPC             &kp A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                         &kp H      &mt RSHFT J      &mt RCTRL K  &mt RALT L  &lt 8 SEMICOLON  &mt BSPC RC(BACKSPACE)
+&kp BSPC             &kp A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                         &kp H      &mt RSHFT J      &mt RCTRL K  &mt RALT L  &lt 8 SEMICOLON  &mt BSPC LC(BACKSPACE)
 &kr_hold LEFT_GUI 0  &kp Z  &kp X       &kp C        &kp V        &kp B        &mt LEFT_SHIFT C_MUTE  &lt 3 F2  &kp N      &kp M            &kp COMMA    &kp DOT     &kp FSLH         &mt RGUI SQT
                                         &lt 5 DEL    &sk LSHFT    &lt 4 ENTER                                   &lt 7 TAB  &mt RSHFT SPACE  &lt 6 ESC
             >;
