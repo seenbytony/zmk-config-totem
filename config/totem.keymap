@@ -232,6 +232,42 @@
             #sensor-binding-cells = <0>;
             bindings = <&rot_3d_r>, <&rot_3d_l>;
         };
+
+        new_beha: new_beha {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHA";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp A>;
+
+            tapping-term-ms = <200>;
+        };
+
+        td_macropad: td_macropad {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_MACROPAD";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_SHIFT C_MUTE>, <&to 5>;
+
+            tapping-term-ms = <150>;
+        };
+
+        td_std_rst: td_std_rst {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_STD_RST";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_SHIFT C_MUTE>, <&to 1>;
+
+            tapping-term-ms = <150>;
+        };
+
+        scrl_alt_h: scrl_alt_h {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&scrl_alt_inch>, <&scrl_alt_dech>;
+
+            tap-ms = <30>;
+            label = "SCRL_ALT_H";
+        };
     };
 
     macros {
@@ -319,6 +355,34 @@
 
             label = "REMOVE_ROWS";
         };
+
+        scrl_alt_dech: scrl_alt_dech {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&msc SCRL_DOWN>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SCRL_ALT_DECH";
+        };
+
+        scrl_alt_inch: scrl_alt_inch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&msc SCRL_UP>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SCRL_ALT_INCH";
+        };
     };
 
     keymap {
@@ -348,10 +412,10 @@
 
             display-name = "Base";
             bindings = <
-                     &kp Q  &kp W       &kp E        &kp R        &lt 3 T                                       &kp Y      &kp U            &kp I        &kp O       &kp P
-&kp BSPC             &kp A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                         &kp H      &mt RSHFT J      &mt RCTRL K  &mt RALT L  &lt 8 SEMICOLON  &kp RC(BSPC)
-&kr_hold LEFT_GUI 0  &kp Z  &kp X       &kp C        &kp V        &kp B        &mt LEFT_SHIFT C_MUTE  &lt 3 F2  &kp N      &kp M            &kp COMMA    &kp DOT     &kp FSLH         &mt RGUI GRAVE
-                                        &lt 5 DEL    &sk LSHFT    &lt 4 ENTER                                   &lt 7 TAB  &mt RSHFT SPACE  &lt 6 ESC
+                     &kp Q  &kp W       &kp E        &kp R        &lt 3 T                              &kp Y      &kp U            &kp I        &kp O       &kp P
+&kp BSPC             &kp A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                &kp H      &mt RSHFT J      &mt RCTRL K  &mt RALT L  &lt 8 SEMICOLON  &kp RC(BSPC)
+&kr_hold LEFT_GUI 0  &kp Z  &kp X       &kp C        &kp V        &kp B        &td_macropad  &lt 3 F2  &kp N      &kp M            &kp COMMA    &kp DOT     &kp FSLH         &mt RGUI GRAVE
+                                        &lt 5 DEL    &sk LSHFT    &lt 4 ENTER                          &lt 7 TAB  &mt RSHFT SPACE  &lt 6 ESC
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&inc_dec_kp DOWN UP>;
@@ -555,6 +619,18 @@
 
             label = "Mouse Layer";
             sensor-bindings = <&scroll_vertical>, <&encoder_3d_rot>;
+        };
+
+        Macropad {
+            bindings = <
+        &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                       &trans  &trans  &trans  &trans  &trans
+&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &td_std_rst  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans   &trans   &trans                        &trans  &trans  &trans
+            >;
+
+            label = "MCR";
+            sensor-bindings = <&scrl_alt_h>;
         };
 
         extra1 { status = "reserved"; };
