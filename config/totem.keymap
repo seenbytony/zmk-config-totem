@@ -169,7 +169,7 @@
         };
 
         combo_asterisk {
-            bindings = <&kp STAR>;
+            bindings = <&kp LS(RIGHT_BRACE)>;
             key-positions = <5 16>;
         };
     };
