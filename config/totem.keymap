@@ -246,7 +246,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MACROPAD";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_SHIFT C_MUTE>, <&to 5>;
+            bindings = <&mt LEFT_SHIFT C_MUTE>, <&to 10>;
 
             tapping-term-ms = <150>;
         };
