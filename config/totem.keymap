@@ -268,6 +268,15 @@
             tap-ms = <30>;
             label = "SCRL_ALT_H";
         };
+
+        skq: sticky-key-quick-release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "Sticky Key Quick Release";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
     };
 
     macros {
@@ -415,7 +424,7 @@
                      &kp Q  &kp W       &kp E        &kp R        &lt 3 T                              &kp Y      &kp U            &kp I        &kp O       &kp P
 &kp BSPC             &kp A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                &kp H      &mt RSHFT J      &mt RCTRL K  &mt RALT L  &lt 8 SEMICOLON  &kp RC(BSPC)
 &kr_hold LEFT_GUI 0  &kp Z  &kp X       &kp C        &kp V        &kp B        &td_macropad  &lt 3 F2  &kp N      &kp M            &kp COMMA    &kp DOT     &kp FSLH         &mt RGUI GRAVE
-                                        &lt 5 DEL    &sk LSHFT    &lt 4 ENTER                          &lt 7 TAB  &mt RSHFT SPACE  &lt 6 ESC
+                                        &lt 5 DEL    &skq LSHFT   &lt 4 ENTER                          &lt 7 TAB  &mt RSHFT SPACE  &lt 6 ESC
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&inc_dec_kp DOWN UP>;
