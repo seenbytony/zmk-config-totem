@@ -246,9 +246,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MACROPAD";
             #binding-cells = <0>;
-            bindings = <&to 2>, <&tog 10>;
+            bindings = <&tog 2>, <&tog 10>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
         td_std_rst: td_std_rst {
@@ -435,7 +435,7 @@
             display-name = "BASE_MAC";
             bindings = <
                   &trans  &trans  &trans      &trans  &trans                  &trans  &trans  &trans      &trans  &trans
-&trans            &trans  &trans  &mt LGUI D  &trans  &trans                  &trans  &trans  &mt RGUI K  &trans  &trans  &trans
+&trans            &trans  &trans  &mt LGUI D  &trans  &trans                  &trans  &trans  &mt RGUI K  &trans  &trans  &kp LA(BACKSPACE)
 &kr_hold LCTRL 0  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mt RCTRL SQT
                                   &trans      &trans  &trans                  &trans  &trans  &trans
             >;
@@ -632,14 +632,14 @@
 
         Macropad {
             bindings = <
-        &kp F11  &kp F12  &kp F13       &kp F14         &kp F15                        &trans  &trans  &trans  &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8        &kp F9          &kp F10                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F1   &kp F2   &kp F3        &kp F4          &kp F5    &td_std_rst  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                          &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCMD                       &trans  &trans  &trans
+        &kp F11  &kp F12  &kp F13       &kp F14         &kp F15                         &trans  &trans  &trans  &trans  &trans
+&trans  &kp F6   &kp F7   &kp F8        &kp F9          &kp F10                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3        &kp F4          &kp F5    &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCMD                        &trans  &trans  &trans
             >;
 
             label = "MCR";
-            sensor-bindings = <&scrl_alt_h>;
+            sensor-bindings = <&inc_dec_kp F16 F17>;
         };
 
         extra1 { status = "reserved"; };
