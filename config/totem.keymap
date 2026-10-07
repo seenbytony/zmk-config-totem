@@ -133,12 +133,12 @@
 
         combo_rtilde_2 {
             bindings = <&kp SQT>;
-            key-positions = <6 17>;
+            key-positions = <7 18>;
         };
 
         combo_rapos_2 {
             bindings = <&kp MINUS>;
-            key-positions = <7 18>;
+            key-positions = <6 17>;
         };
 
         combo_quotes {
