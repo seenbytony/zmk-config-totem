@@ -47,45 +47,15 @@
             bindings = <&kp ESC>;
         };
 
-        combo_lalt {
-            bindings = <&kp LALT>;
-            key-positions = <11 12>;
-        };
-
-        combo_ralt {
-            bindings = <&kp RALT>;
-            key-positions = <20 19>;
-        };
-
         combo_mirror {
             bindings = <&td_macropad>;
             key-positions = <26 25 24>;
-        };
-
-        combo_rtilde {
-            bindings = <&kp SQT>;
-            key-positions = <6 7>;
         };
 
         combo_prntscr {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <12 13 14>;
             layers = <0>;
-        };
-
-        combo_rapos {
-            bindings = <&kp MINUS>;
-            key-positions = <7 8>;
-        };
-
-        como_lapos {
-            bindings = <&kp MINUS>;
-            key-positions = <2 1>;
-        };
-
-        combo_ltilde {
-            bindings = <&kp SQT>;
-            key-positions = <2 3>;
         };
 
         combo_enc_mode {
@@ -171,6 +141,11 @@
         combo_asterisk {
             bindings = <&kp LS(RIGHT_BRACE)>;
             key-positions = <5 16>;
+        };
+
+        combo_backspace_l {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <10 22>;
         };
     };
 
